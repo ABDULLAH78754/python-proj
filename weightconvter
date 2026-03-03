@@ -1,0 +1,10 @@
+w=str(input("Enter the weight type (Kilogram / Pound): "))
+x=float(input(f"Enter the Weight in {w}: "))
+if w=="Kilogram":
+    weight = (x / 0.45359237)
+elif w=="Pound":
+    weight =(x * 0.45359237)
+else:
+    print("Enter valid details.")
+
+print(f"The value is {weight}.")

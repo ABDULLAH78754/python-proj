@@ -1,0 +1,5 @@
+GIT AND GITHUB 
+
+GIT -> version tracking software 
+GITHUB -> Hosts Git 
+GitLab
