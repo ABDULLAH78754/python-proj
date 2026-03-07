@@ -21,13 +21,13 @@ def atm():
         elif A==2:
                 while True:
                     pin = int(input("Enter your PIN: "))
-                    B=input(f"Exit / 1:").lower
+                    B=input(f"Exit / 1:").lower()
                     if B=="exit":
                         break
                     else:
                         if pin == create_pin:
                             amount=int(input("Enter amount:"))
-                            if amount<balance:
+                            if amount<=balance:
                                 balance-=amount
                                 print(f"Now your available balance:{balance} ")
                             else:
@@ -38,7 +38,7 @@ def atm():
         elif A==3:
                 while True:
                     pin = int(input("Enter your PIN: "))
-                    B=input(f"Exit / 1: ").lower
+                    B=input(f"Exit / 1: ").lower()
                     if B=="exit":
                          break
                     else:
