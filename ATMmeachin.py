@@ -15,17 +15,18 @@ def atm():
             age=int(input("Enter your age:"))
             id_proof=int(input("Enter your Id Number:"))
             number = random.randint(100000000000, 999999999999)
-            print(number)
+            print(F"Your account no: {number}")
             create_pin=int(input("Create your four digit pin:"))
             balance=int(input("Enter your first balance:"))
         elif A==2:
                 while True:
+                    account_number=int(input("Enter your account no: "))
                     pin = int(input("Enter your PIN: "))
                     B=input(f"Exit / 1:").lower()
                     if B=="exit":
                         break
                     else:
-                        if pin == create_pin:
+                        if pin == create_pin and account_number == number:
                             amount=int(input("Enter amount:"))
                             if amount<=balance:
                                 balance-=amount
@@ -37,22 +38,24 @@ def atm():
                             print("Incorrect PIN")
         elif A==3:
                 while True:
+                    account_number=int(input("Enter your account no: "))
                     pin = int(input("Enter your PIN: "))
                     B=input(f"Exit / 1: ").lower()
                     if B=="exit":
                          break
                     else:
 
-                        if pin == create_pin:
+                        if pin == create_pin and account_number == number:
                             amount=int(input("Enter amount:"))
                             balance+=amount
                             print(f"Now available balance in your account{balance}")
                         else:
                             print("Incorrect PIN")
         elif A==4:
+                account_number=int(input("Enter your account no: "))
                 pin = int(input("Enter your PIN: "))
 
-                if pin == create_pin:
+                if pin == create_pin and account_number == number:
                     print(f"your balance is {balance}")
                 else:
                     print("Incorrect PIN")
