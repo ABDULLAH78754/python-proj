@@ -8,7 +8,7 @@ def atm():
         print("4.Balance Enquiry")
         print("5.Exit")
         
-        A=int(input())
+        A=int(input("Enter here: "))
         if A==1:
             print("Enter your details:")
             Account_name=input("Enter your name: ")
@@ -20,9 +20,10 @@ def atm():
             balance=int(input("Enter your first balance:"))
         elif A==2:
                 while True:
+                    B=input(f"Exit / 1:").lower()
                     account_number=int(input("Enter your account no: "))
                     pin = int(input("Enter your PIN: "))
-                    B=input(f"Exit / 1:").lower()
+                    
                     if B=="exit":
                         break
                     else:
@@ -38,9 +39,10 @@ def atm():
                             print("Incorrect PIN")
         elif A==3:
                 while True:
+                    B=input(f"Exit / 1: ").lower()
                     account_number=int(input("Enter your account no: "))
                     pin = int(input("Enter your PIN: "))
-                    B=input(f"Exit / 1: ").lower()
+                    
                     if B=="exit":
                          break
                     else:
